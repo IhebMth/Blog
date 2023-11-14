@@ -21,7 +21,7 @@ const app = express()
 
 const salt = bcrypt.genSaltSync(10)
 const secret = 'yzeagzhfnvbsufjza'
-app.use(cors({credentials:true, origin:"http://localhost:5173"}))
+app.use(cors({credentials:true, origin:"https://iheb-blog.onrender.com"}))
 app.use(express.json())
 app.use(coockieParser())
 
@@ -189,7 +189,7 @@ const sendEmail = async (to, subject, html) => {
       const subscribedUsers = await EmailSubscription.find();
 
       // Send emails to subscribed users
-      const postLink = `http://localhost:5173/post/${postDoc._id}`;
+      const postLink = `https://iheb-blog.onrender.com/post/${postDoc._id}`;
       const emailSubject = '🚀 Exciting News: A New Post Awaits You!';
       const emailHtml = `
   <h2><b>${postDoc.title}</b></h2>
