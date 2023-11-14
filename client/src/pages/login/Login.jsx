@@ -43,7 +43,7 @@ function Login() {
   async function handleClickSubmit(e)  {
    e.preventDefault()
 
-   const response = await fetch('http://localhost:4000/login', {
+   const response = await fetch('https://blog-deploy-backend.onrender.com/login', {
    method: 'POST',
    body: JSON.stringify({email, password}),
    headers: {'Content-Type':'application/json'},

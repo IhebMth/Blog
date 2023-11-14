@@ -12,7 +12,7 @@ function PostPage() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:4000/post/${id}`)
+    fetch(`https://blog-deploy-backend.onrender.com/post/${id}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error("Network response was not ok");
@@ -59,7 +59,7 @@ function PostPage() {
       )}
 
       <div className="image">
-        <img src={`http://localhost:4000/${postInfo.cover}`} alt="image" />
+        <img src={`https://blog-deploy-backend.onrender.com/${postInfo.cover}`} alt="image" />
       </div>
       <div
         className="content"

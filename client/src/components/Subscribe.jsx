@@ -8,7 +8,7 @@ const SubscribeComponent = () => {
 
   const handleSubscribe = async () => {
     try {
-      const response = await fetch("http://localhost:4000/subscribe", {
+      const response = await fetch("https://blog-deploy-backend.onrender.com/subscribe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

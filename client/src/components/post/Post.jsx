@@ -16,7 +16,7 @@ function Post({
 
 <div className="image">
   <Link to={`/post/${_id}`}>
-  <img src={'http://localhost:4000/'+cover} alt="image"  />
+  <img src={'https://blog-deploy-backend.onrender.com/'+cover} alt="image"  />
   </Link>
   </div>
 

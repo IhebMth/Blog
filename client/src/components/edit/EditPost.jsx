@@ -22,7 +22,7 @@ function EditPost() {
 
   useEffect(() => {
     // Fetch existing post data
-    fetch(`http://localhost:4000/post/${id}`)
+    fetch(`https://blog-deploy-backend.onrender.com/post/${id}`)
       .then((res) => {
         res.json().then((postInfo) => {
           setTitle(postInfo.title);
@@ -51,7 +51,7 @@ function EditPost() {
       data.set('existingFile', file);
     }
 
-    const res = await fetch('http://localhost:4000/post', {
+    const res = await fetch('https://blog-deploy-backend.onrender.com/post', {
       method: 'PUT',
       body: data,
       //use cookies 

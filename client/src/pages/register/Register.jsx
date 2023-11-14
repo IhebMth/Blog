@@ -51,7 +51,7 @@ const Register = () => {
     if ((mailError == false) && (passError == false)) {
       e.preventDefault();
   
-      const response = fetch('http://localhost:4000/register', {
+      const response = fetch('https://blog-deploy-backend.onrender.com/register', {
         method: 'POST',
         body: JSON.stringify({ userName, email, password }),
         headers: { 'Content-Type': "application/json" },

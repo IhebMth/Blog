@@ -14,7 +14,7 @@ function Navbar() {
   useEffect(() => {
     const fetchUserInfo = async () => {
       try {
-        const response = await fetch("http://localhost:4000/profile", {
+        const response = await fetch("https://blog-deploy-backend.onrender.com/profile", {
           credentials: "include",
         });
 
@@ -39,7 +39,7 @@ function Navbar() {
   // Rest of your component code
 
   const logout = () => {
-    fetch("http://localhost:4000/logout", {
+    fetch("https://blog-deploy-backend.onrender.com/logout", {
       credentials: "include",
       method: "POST",
     });

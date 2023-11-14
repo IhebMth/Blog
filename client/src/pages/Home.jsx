@@ -11,7 +11,7 @@ function Home() {
 
   // Fetch posts data on component mount
   useEffect(() => {
-    fetch("http://localhost:4000/post").then((res) => {
+    fetch("https://blog-deploy-backend.onrender.com/post").then((res) => {
       res.json().then((posts) => {
         setPosts(posts);
       });

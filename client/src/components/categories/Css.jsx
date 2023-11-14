@@ -10,7 +10,7 @@ function Css() {
 
  // Fetch posts data on component mount
 useEffect(() => {
-    fetch("http://localhost:4000/post").then((res) => {
+    fetch("https://blog-deploy-backend.onrender.com/post").then((res) => {
       res.json().then((posts) => {
         // Filter the posts to only include the ones with the category "Css"
         const cssPosts = posts.filter(post => post.category === "Css");

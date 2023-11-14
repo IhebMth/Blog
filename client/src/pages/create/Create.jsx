@@ -39,7 +39,7 @@ function Create() {
     data.set('category', category);
     data.set('file', file);
 
-    const res = await fetch('http://localhost:4000/post', {
+    const res = await fetch('https://blog-deploy-backend.onrender.com/post', {
       method: 'POST',
       body: data,
       credentials: 'include',
@@ -60,7 +60,7 @@ function Create() {
     const data = new FormData();
     data.append('file', file);
 
-    const response = await fetch('http://localhost:4000/upload', {
+    const response = await fetch('https://blog-deploy-backend.onrender.com/upload', {
       method: 'POST',
       body: data,
     });
