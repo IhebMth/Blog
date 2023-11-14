@@ -1,0 +1,109 @@
+/* Style for the select dropdown and input file in the same row */
+
+input[type='file'],
+select {
+  
+    width: 100%;
+    text-align: center;
+  }
+
+@media screen  and (max-width: 515px )
+{
+    .category
+    {
+        flex-direction: column;
+    }
+
+      
+}
+
+/* profile image starts */
+.profile-image 
+{
+    position: relative;
+  gap: 10px;
+  background-color:  #EEEEEE;
+  padding: 10px 5px;
+  color: var(--color-grey);
+  font-size: 18px;
+}
+
+
+
+.profile-image .btn 
+{     
+    background-color: var(--green-color);
+    color: var(--main-color);
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.profile-image .image-preview 
+{
+    position: relative;
+    box-sizing: border-box;
+    object-fit: contain;
+    margin-bottom: 0;
+    padding-bottom: 0;
+   
+}
+
+.profile-image .image-preview img 
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+}
+
+.image-container {
+    position: relative;
+    transition: linear 0.5s all ease-in-out;
+    background-color: black;
+    border-radius: 5%;
+  }
+  
+
+  .image-overlay {
+   
+    transition: opacity 0.3s; /* Transition for opacity change */
+    border-radius: 5%;
+}
+
+.image-container:hover .image-overlay {
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}
+
+.image-container .change-picture {
+    opacity: 1;
+  }
+  
+  .change-picture {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    display: none;
+    align-items: center;
+  }
+  
+  .image-preview:hover .change-picture {
+    display: flex; 
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+  
+}
+  
+  .camera-icon {
+    margin-right: 4px;
+  }
+
+.image-desc
+  {
+    width: 200px;
+  }
+/* Profile Image End */

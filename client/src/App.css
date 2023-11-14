@@ -1,0 +1,72 @@
+:root
+{
+    --main-color : #333;
+    --second-backgroundColor: #eee;
+    --green-color : #1AEBB6;
+    --third-backgroundColor :    rgb(69, 69, 242);
+}
+
+
+body {
+  color: var(--main-color);
+  background-color: #ededed !important ;
+}
+
+img {
+  max-width: 100%;
+}
+main {
+  padding: 10px;
+  max-width: 960px;
+  margin: 0 auto
+}
+
+ .line
+ {
+  position: relative;
+  border: 2px solid var(--main-color) !important;
+  }
+
+  .line::after
+  {
+    content: '';
+    background-color: var(--main-color);
+    position: absolute;
+    width: 2px;
+    height: 80px;
+    bottom: -1px;
+    right: -3px;
+  }
+
+a {
+  cursor: pointer;
+ 
+}
+
+
+button {
+  width: 100%;
+  display: block;
+  background-color: #555;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 0;
+  
+}
+
+form.login h1, form.register h1
+{
+  text-align: center;
+}
+
+@media screen  and (max-width: 515px )
+{
+  h1, h2, h3, p, a, li, 
+  .input-group-text, 
+  .dropdown-toggle, .dropdown-items {
+    font-size : 10px !important;
+  }
+
+  
+}

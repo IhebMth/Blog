@@ -1,0 +1,133 @@
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    background-color: var(--main-color);
+    color: #fff;
+   padding: 10px 20px;
+  }
+  
+a
+{
+  text-decoration: none;
+  color: var(--main-color);
+}
+ header>hr {
+  margin: 0;
+  padding: 0;
+  border: 1px solid black !important;
+}
+  .menu-top a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+  
+.menu-top a.logo {
+  font-weight: bold;
+}
+  
+.menu-top nav {
+  display: flex;
+  gap: 15px;
+}
+
+  .login, 
+  .register
+  {
+    background-color: var(--second-backgroundColor);
+    padding: 10px 12px;
+    border-radius: 15px;
+    transition: background-color 0.5s, transform 0.3s, color 0.3s;
+    transition: 0.5s all ease-in-out;
+    font-weight: 600;
+    color: var(--main-color) !important; 
+  }
+
+  .login:hover, 
+  .register:hover
+  {
+    background-color: var(--green-color);
+    transform: scale(1.1);
+  }
+
+  .user p
+  {
+    margin-top: 3px;
+  margin-bottom: 3px;
+  }
+  /* Navbar.css */
+
+
+/* Drop Down Menu */
+
+
+.menu-bottom 
+{
+  background-color: var(--main-color);
+  justify-content: space-between;
+}
+.header-bottom
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-bottom #dropdown-basic
+{
+  background-color: var(--green-color);
+}
+
+.menu-links {
+display: flex;
+gap: 30px;
+margin: 10px;
+}
+
+.menu-links  a {
+text-decoration: none;
+color: var(--main-color); 
+font-weight: 600;
+background-color: var(--second-backgroundColor);
+padding: 2px 12px;
+transition: background-color 0.5s, transform 0.3s, color 0.3s;
+border-radius: 8px;
+}
+
+.menu-links a:hover 
+{
+  background-color: var(--green-color);
+  transform: scale(1.1);
+
+}
+
+.dropdown-menu
+{
+  display: flex-column;
+  
+  background-color: var(--second-backgroundColor) !important;
+}
+
+.dropdown-menu .dropdown-item 
+{
+  margin-bottom: 3px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #ddd !important;
+  transition: background-color 0.5s, transform 0.3s, color 0.3s;
+  transition: 0.5s all ease-in-out;
+
+
+}
+
+.dropdown-menu .dropdown-item button {
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.dropdown-menu .dropdown-item:hover
+{
+  background-color: var(--green-color) !important;
+}

@@ -1,0 +1,235 @@
+.ground {
+    display: flex;
+    flex-direction: row;
+ 
+    height: 100%;
+    padding: auto;
+}
+
+.ground .one {
+    flex: 0 0 30%;
+    background-color: var(--green-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.ground .two {
+    flex: 0 0 70%;
+    background-image: url('../../assets/white-painted-wall-texture-background.jpg');
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.ground .one .left-side
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  
+   margin-left: 10%;
+   margin-right: 0%;
+    
+    box-shadow: 0px 0px 10px 0 #7c7777;
+    
+}
+
+.left-side i
+{
+    color: var(--main-backgroundColor);
+    padding: 10px;
+    font-size: 5vw;
+  
+}
+
+.left-side .logo-header
+{
+    font-size: 2.8vw;
+     font-weight: 700;
+    font-style: italic;
+}
+
+.left-side p
+{
+    padding-left: 10% ;
+    padding-right: 10%;
+    text-align: center;
+    font-size: 1.8vw;
+  
+    max-width: 60%;
+
+    
+}
+
+.ground .two .right-side
+{
+   
+    flex-grow: 1;
+    box-shadow: 0px 0px 10px 0 #7c7777;
+    margin: 0 0 0 -1%;
+  ;
+}
+
+.login-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+    font-size: 14px;
+    position: relative;
+    padding-top: 150px;
+    padding-top: auto;
+    padding-left: 100px auto;
+    padding-right: 100px auto;
+    font-weight: 500;
+    
+  
+}
+
+
+@media (max-width: 691px) {
+    .login-form
+    {
+        padding-top: 150px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .login-form
+    {
+        padding-top: 120px;
+    }
+}
+
+.login-form a 
+{
+    text-decoration: none;
+
+}
+
+.login-form a:link, 
+.login-form a:visited
+{
+    color: black;
+    font-weight: 600;
+    font-size: 1.2vw;
+    width: auto;
+}
+
+.login-form a:hover
+{
+    color: var(--green-color);
+}
+.login-form .help
+{
+    position: absolute;
+    right: 2vw;
+    top: 2vw;
+}
+
+.login-form .title
+{
+   
+    position: absolute;
+     top: 80px;
+    font-size: 2.8vw;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.login-form .mail
+{
+   
+    padding-right: 24vw;
+    font-size: 1.6vw;
+}
+
+.login-form .password
+{
+    padding-right: 21.3vw;
+    font-size: 1.6vw;
+}
+
+.login-form input
+{
+    width:  30vw;
+    padding: 1vw;
+    margin: 10px;
+    border: 1px solid #2E1056 ;
+    text-indent: 10px;
+    font-size: 1.4vw;
+    margin-bottom: 3vw;
+}
+
+.login-form input:focus
+{
+    border: none;
+    box-shadow: 0 0 10px var(--main-backgroundColor);
+    
+}
+
+.login-form .resetPass
+{
+  padding-left: 20vw;
+}
+
+.login-form .btn input
+{
+    background-color:  var(--green-color);
+    cursor: pointer;
+    margin-left: 5vw;
+    width: 15vw;
+    border-radius: 30px;
+    padding: 8px 10px 8px 4px;
+    font-weight: 500;
+}
+
+.eyes
+{
+ margin-left: 26vw !important;
+ margin-top: -6vw !important;
+ padding-bottom: 2vw !important;
+ font-size: 1.2vw !important
+}
+
+@media screen  and (max-width: 515px )
+{
+    .eyes {
+    margin-top: -6vw !important;
+
+  }
+
+  
+}
+
+.closedEye 
+{
+    cursor: pointer;
+}
+
+.error 
+{
+     
+    margin-bottom: 1vw;
+    font-size: 1.4vw;
+    width: 24vw;
+    text-align: center;
+    padding: 1vw;
+    
+}
+
+.email-error
+{
+    margin-top: -2vw;
+    margin-bottom: 1vw;
+}
+
+
